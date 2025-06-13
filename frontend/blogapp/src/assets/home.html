@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Blog Home</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background-color: #f4f4f4;
+      }
+
+      header {
+        background-color: #007bff;
+        color: white;
+        padding: 15px 20px;
+        text-align: center;
+      }
+
+      nav {
+        display: flex;
+        justify-content: center;
+        background-color: #0056b3;
+      }
+
+      nav a {
+        color: white;
+        padding: 14px 20px;
+        text-decoration: none;
+        display: block;
+      }
+
+      nav a:hover {
+        background-color: #003d80;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 30px auto;
+        padding: 20px;
+        background: white;
+        border-radius: 8px;
+      }
+
+      .welcome {
+        margin-bottom: 20px;
+      }
+
+      .blog-preview {
+        border-left: 4px solid #007bff;
+        background-color: #f9f9f9;
+        padding: 15px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+      }
+
+      .blog-preview h3 {
+        color: #007bff;
+      }
+
+      .create-btn {
+        display: inline-block;
+        background-color: #28a745;
+        color: white;
+        padding: 10px 15px;
+        text-decoration: none;
+        border-radius: 4px;
+      }
+
+      .create-btn:hover {
+        background-color: #218838;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Mini Blog</h1>
+    </header>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#blogs">Blogs</a>
+      <a href="#" onclick="alert('Add login functionality here')">Login</a>
+    </nav>
+
+    <div class="container">
+      <div class="welcome">
+        <h2>Hello, Blogger!</h2>
+        <p>Share your thoughts, stories, and ideas with the world.</p>
+        <a class="create-btn" href="#blogs">Create a New Blog</a>
+      </div>
+
+      <section id="blogs">
+        <h2>Recent Posts</h2>
+
+        <div class="blog-preview">
+          <h3>5 Tips for Writing Better Blogs</h3>
+          <p>
+            Writing a blog isn't just about expressing your thoughts, it's about
+            delivering value...
+          </p>
+        </div>
+
+        <div class="blog-preview">
+          <h3>Why I Started Blogging</h3>
+          <p>
+            Blogging helps me reflect and connect with others. Here's how it
+            changed my life...
+          </p>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
